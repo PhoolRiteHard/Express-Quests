@@ -24,7 +24,7 @@ const userHandlers = require("./userHandlers");
 
 app.post(
   "/api/login",
-  userHandlers.getUserByMailAndPassword,
+  userHandlers.getWithMailAndPassword,
   verifyPassword
 );
 app.get("/api/users", userHandlers.getUsers);
